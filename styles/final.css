@@ -1,0 +1,115 @@
+.final {
+    background-color: var(--branco-cabecalho);
+}
+
+.final__topicos {
+    background-image: var(--azul-degrade);
+    padding: 1em 0;
+}
+
+.topicos__titulo {
+    color: var(--branco-cabecalho);
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em 0;
+}
+
+.topicos__lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+.lista__item {
+    background-color: var(--laranja);
+    padding: 1em;
+}
+
+.lista__item--link {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--branco-cabecalho);
+    font-size: 14px;
+}
+
+.final__email {
+    padding: 1em;
+}
+
+.email__titulo {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--azul-degrade);
+}
+
+.email__texto {
+    font-weight: 300;
+    color: var(--azul-degrade);
+    margin: 1em 0;
+}
+
+.email__input {
+    padding: 0.8em 1.5em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: 1px solid;
+    border-color: var(--azul-degrade);
+    border-radius: 24px;
+    width: 100%;
+}
+
+.email__input::placeholder {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    padding-left: 2em;
+    background: url("../img/Email.svg") no-repeat;
+    background-position: 0em;
+    color: var(--azul-degrade);
+}
+
+@media screen and (min-width: 1024px) {
+    .topicos__titulo {
+        font-size: 24px;
+    }
+
+    .topicos__lista{
+        padding: 1em 3em;
+    }
+
+    .lista__item--link {
+        font-size: 24px;
+    }
+
+    .final__email {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 3em;
+    }
+
+    .email__descricao {
+        margin-right: 3em;
+    }
+
+    .email__titulo {
+        font-size: 24px;
+    }
+
+    .email__input {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .final__topicos {
+        padding: 2em 25vw;
+    }
+
+    .final__email {
+        padding: 2em 30vw;
+    }
+}
